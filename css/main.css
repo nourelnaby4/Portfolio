@@ -1,0 +1,21 @@
+body{
+    font-family:"Maven Pro"
+}
+
+/* Hide the menu initially on mobile */
+@media (max-width: 767px) {
+    #menu {
+        display: none;
+    }
+    #menu.show-mobile {
+        display: block;
+    }
+    #toggleMobileMenu {
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    #toggleMobileMenu {
+        display: none;
+    }
+}

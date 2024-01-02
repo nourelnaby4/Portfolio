@@ -4,34 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <style>
-        /* Hide the menu initially on mobile */
-        @media (max-width: 767px) {
-            #menu {
-                display: none;
-            }
-            #menu.show-mobile {
-                display: block;
-            }
-            #toggleMobileMenu {
-                display: block;
-            }
-        }
-        @media (min-width: 768px) {
-            #toggleMobileMenu {
-                display: none;
-            }
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"  />
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="./css/main.css" rel="stylesheet"/>
 </head>
-<body class="bg-orange-300">
+<body>
   <header>
     <nav class="container mx-auto px-4 py-6 flex flex-row flex-wrap justify-between items-center">
       <div class="flex flex-row items-center w-full md:w-auto mb-4 md:mb-0">
-        <i id="menuToggle" class="fa-regular fa-user text-3xl font-bold md:hidden cursor-pointer"></i>
+        <img src="./assets/images/ProfileImage.jpg" width="65px" class="h-auto rounded-full border-slate-300 border-solid cursor-pointer"  alt="">
         <span class="text-xl font-bold font-maven mx-2">A.NourElnaby</span>
         <i id="toggleMobileMenu" class="fa-solid fa-bars text-3xl font-bold md:hidden ml-auto cursor-pointer"></i>
       </div>  
@@ -46,7 +28,7 @@
           </ul>
         </div>
         <div >
-          <button class="bg-yellow-400 p-2 rounded-lg" > 
+          <button class="text-white bg-yellow-500 p-2 rounded-lg" > 
             <i class="fa-regular fa-moon font-bold text-lg md:mr-2"></i>
             <span class="text-lg font-bold font-maven">Color Mode</span>
           </button>
@@ -56,13 +38,21 @@
     </nav>
     
   </header>
+  <section id="hero">
+    <div class="container mx-auto flex flex-col-reverse items-center justify-between  space-x-2  md:flex-row">
+      <div class="flex flex-col text-start space-y-6  md:w-1/2 md:text-start">
+        <h1 class="font-bold text-3xl">Mid .NET Developer Specializing in Architectural Patterns and Angular</h1>
+        <p>Experienced in implementing multi-structured patterns like Clean Architecture and Tier Architecture. Proficient in applying SOLID principles to ensure scalable and maintainable solutions.</p>
+        <a href="#" class="text-white font-bold text-xl bg-yellow-500 rounded-xl  py-2 px-4 self-center  hover:bg-slate-500 md:self-start">Download Resume</a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="./assets/images/undraw_Programming_re_kg9v.png" alt="land image">
+      </div>
+    </div>
+ 
+  </section>
 
-  <script>
-    const menuToggle = document.getElementById('toggleMobileMenu');
-    const menu = document.getElementById('menu');
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('show-mobile');
-    });
-  </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script src="./js/main.js"></script>
 </body>
 </html>
