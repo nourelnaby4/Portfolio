@@ -19,3 +19,12 @@ body{
         display: none;
     }
 }
+/* 
+.timeline-yr::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-color:black;
+    height:300px;
+} */
